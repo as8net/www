@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/img/favicon/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/img/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="/manifest.webmanifest">
+    <link rel="stylesheet" href="/css/style.css" type="text/css" />
+    <title>AS8 - Ask Selmer</title>
+    <meta name="description" content="Systems administrator and owner-operator of AS202361" />
+</head>
+
+<body>
+    <header>
+        <a class="brand" href="/">
+            <img src="/img/favicon/icon.svg" width="64px" height="64px" alt="AS8 Logo" />
+            <div class="fqdn">
+                <p class="name" aria-label="Name">Ask Selmer</p>
+                <!--<p class="tld" aria-label="TLD">net</p>-->
+            </div>
+        </a>
+        <input type="checkbox" id="menu-toggle" role="button" aria-label="Menu button" />
+        <label for="menu-toggle" class="menu-button">
+            <span class="menu-button-line"></span>
+        </label>
+        <nav class="menu">
+            <ul class="links">
+                <!--<li><a href="https://status.as8.net" aria-label="Status">Status</a></li>-->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero">
+            <h1>Ask Selmer</h1>
+            <p>
+                Systems administrator and owner-operator of AS202361
+            </p>
+            <input type="button" id="contact-button" value="Send an email"
+                onclick="window.location.href='mailto:contact@as8.net'" />
+        </div>
+        <br>
+        <div class="card-container">
+            <div href="/about" class="card-wrapper" aria-label="About me">
+                <div class="card">
+                    <img src="/img/icon/web-server-login.svg" width="80px" height="80px" alt="Computer" />
+                    <h2>Ask Selmer</h2>
+                    <br>
+                    <p>
+                        Systems administration, development and infrastructure management through automation.
+                    </p>
+                </div>
+            </div>
+            <div href="/asn" class="card-wrapper" aria-label="Autonomous System">
+                <div class="card">
+                    <img src="/img/icon/network-peering.svg" width="80px" height="80px" alt="Network" />
+                    <h2>AS202361</h2>
+                    <br>
+                    <p>
+                        Operating a modern IPv4+IPv6 Autonomous System and KVM-based hosting platform.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="column">
+            <a href="https://www.peeringdb.com/asn/202361" aria-label="AS202361 Peering DB" rel="noopener">AS202361</a>
+            <p>CVR: 43541641</p>
+        </div>
+        <div class="column">
+            <a href="https://stat.ripe.net/AS202361" aria-label="RIPE NCC" rel="noopener">
+                <img src="/img/icon/ripe-ncc-member-logo-white.svg" width="200px" height="141px" alt="RIPE NCC" />
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>
