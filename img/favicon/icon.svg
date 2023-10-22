@@ -1,0 +1,31 @@
+<svg width="1091px" height="1091px" version="1.1" xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
+    xmlns:serif="http://www.serif.com/"
+    style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <defs>
+        <style>
+            :root {
+                --color-primary: #78b4f0;
+                --color-secondary: #0073e6;
+                --color-tertiary: #214263;
+            }
+            @media (prefers-color-scheme: dark) {
+                :root {
+                    --color-primary: #fafafa;
+                    --color-secondary: #78b4f0;
+                    --color-tertiary: #0073e6;
+                }
+            }
+        </style>
+    </defs>
+    <g transform="matrix(1.36364,0,0,1.36364,0,0)">
+        <g id="Logo" transform="matrix(0.576281,0,0,0.732765,-191.06,-234.525)">
+            <rect x="331.539" y="320.055" width="1388.21" height="1091.76" style="fill:none;"/>
+            <g transform="matrix(1.73526,0,0,1.36469,-709.62,-294.068)">
+                <path d="M1000,1150.01L678.324,1000.01L839.162,925.008L1000,1000.01L1321.67,850.011L1321.66,1000.01L1000,1150.01Z" style="fill:var(--color-tertiary);"/>
+                <path d="M678.324,850.008L678.324,700.008L1000,850.008L1160.84,775.008L1160.84,925.008L1000,1000.01L678.324,850.008Z" style="fill:var(--color-secondary);"/>
+                <path d="M839.162,775.008L678.324,700.008L1000,550.008L1321.68,700.008L1160.84,775.008L1000,700.008L839.162,775.008Z" style="fill:var(--color-primary);"/>
+            </g>
+        </g>
+    </g>
+</svg>
