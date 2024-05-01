@@ -1,0 +1,21 @@
+<html>
+
+<body>
+    <pre id="ip-address">
+
+    </pre>
+    <script>
+        let path = window.location.pathname.split('/')[1];
+        path = path.split('.')[0];
+        fetch(`https://${path}.as8.net`)
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('ip-address').textContent = data;
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+            });
+    </script>
+</body>
+
+</html>
