@@ -5,9 +5,9 @@
     <defs>
         <style>
             :root {
-                --color-primary: #78b4f0;
-                --color-secondary: #0073e6;
-                --color-tertiary: #214263;
+                --color-primary: #fafafa;
+                --color-secondary: #78b4f0;
+                --color-tertiary: #0073e6;
             }
         </style>
     </defs>
