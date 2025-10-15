@@ -3,7 +3,6 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" href="/img/favicon/icon.svg" type="image/svg+xml">
@@ -15,12 +14,12 @@
 </head>
 
 <body>
+    <a href="#main" class="skip-link">Skip to content</a>
     <header>
         <a class="brand" href="/">
-            <img src="/img/favicon/icon.svg" width="64px" height="64px" alt="AS8 Logo" />
+            <img src="/img/favicon/icon.svg" width="64" height="64" alt="AS8 Logo" />
             <div class="fqdn">
-                <p class="name" aria-label="Name">Ask Selmer</p>
-                <!--<p class="tld" aria-label="TLD">net</p>-->
+                <p class="name">Ask Selmer</p>
             </div>
         </a>
         <input type="checkbox" id="menu-toggle" role="button" aria-label="Menu button" />
@@ -29,42 +28,32 @@
         </label>
         <nav class="menu">
             <ul class="links">
-                <!--<li><a href="https://status.as8.net" aria-label="Status">Status</a></li>-->
+                <!-- Menu items can be added here -->
             </ul>
         </nav>
     </header>
 
-    <main>
+    <main id="main">
         <div class="hero">
             <h1>Ask Selmer</h1>
-            <p>
-                Systems administrator and owner-operator of AS202361
-            </p>
-            <input type="button" id="contact-button" value="Send an email"
-                onclick="window.location.href='mailto:contact@as8.net'" />
+            <p>Systems administrator and owner-operator of AS202361</p>
+            <a href="mailto:contact@as8.net" class="button">Send an email</a>
         </div>
-        <br>
         <div class="card-container">
-            <div href="/about" class="card-wrapper" aria-label="About me">
+            <a href="/about" class="card-wrapper" aria-label="About me">
                 <div class="card">
-                    <img src="/img/icon/web-server-login.svg" width="80px" height="80px" alt="Computer" />
+                    <img src="/img/icon/web-server-login.svg" width="80" height="80" alt="Computer" />
                     <h2>Ask Selmer</h2>
-                    <br>
-                    <p>
-                        Systems administration, development and infrastructure management through automation.
-                    </p>
+                    <p>Systems administration, development and infrastructure management through automation.</p>
                 </div>
-            </div>
-            <div href="/asn" class="card-wrapper" aria-label="Autonomous System">
+            </a>
+            <a href="/asn" class="card-wrapper" aria-label="Autonomous System">
                 <div class="card">
-                    <img src="/img/icon/network-peering.svg" width="80px" height="80px" alt="Network" />
+                    <img src="/img/icon/network-peering.svg" width="80" height="80" alt="Network" />
                     <h2>AS202361</h2>
-                    <br>
-                    <p>
-                        Operating a modern IPv4+IPv6 Autonomous System and KVM-based hosting platform.
-                    </p>
+                    <p>Operating a modern IPv4+IPv6 Autonomous System and KVM-based hosting platform.</p>
                 </div>
-            </div>
+            </a>
         </div>
     </main>
 
@@ -75,7 +64,7 @@
         </div>
         <div class="column">
             <a href="https://stat.ripe.net/AS202361" aria-label="RIPE NCC" rel="noopener">
-                <img src="/img/icon/ripe-ncc-member-logo-white.svg" width="200px" height="141px" alt="RIPE NCC" />
+                <img src="/img/icon/ripe-ncc-member-logo-white.svg" width="200" height="141" alt="RIPE NCC" />
             </a>
         </div>
     </footer>
