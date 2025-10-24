@@ -26,7 +26,8 @@
                     <p class="mb-0 ms-2 fs-3 fw-semibold">Ask Selmer</p>
                 </a>
 
-                <input class="visually-hidden" id="css-nav-toggle" type="checkbox" />
+                <input class="visually-hidden" id="css-nav-toggle" type="checkbox"
+                    aria-label="Toggle navigation menu" />
                 <label
                     class="css-navbar-toggler ms-auto d-lg-none d-inline-flex align-items-center justify-content-center"
                     for="css-nav-toggle" aria-label="Toggle navigation">
@@ -34,12 +35,34 @@
                 </label>
 
                 <div class="css-navbar-collapse d-lg-flex ms-lg-auto align-items-center">
-                    <ul class="navbar-nav d-flex flex-column flex-lg-row align-items-center gap-3 mb-0">
-                        <li class="nav-item">
-                            <a class="nav-link text-decoration-none text-dark small" href="/about">About</a>
+                    <ul
+                        class="navbar-nav d-flex flex-column flex-lg-row align-items-stretch gap-3 pb-3 pb-lg-0 mt-3 mt-lg-0">
+                        <li class="nav-item d-flex">
+                            <a class="text-decoration-none fw-light btn rounded-0 css-btn-outline-secondary w-100"
+                                href="/about">About
+                                <svg fill="var(--bs-secondary)" xmlns="http://www.w3.org/2000/svg" width="1rem"
+                                    height="1rem" viewBox="0 0 8 13" class="align-text-center ms-2">
+                                    <path d="M7.39166 4.93066H4.92969V7.39936H7.39166V4.93066Z"></path>
+                                    <path d="M4.92681 2.46875H2.46484V4.93744H4.92681V2.46875Z"></path>
+                                    <path d="M2.46197 0H0V2.46869H2.46197V0Z"></path>
+                                    <path d="M4.92681 7.39941H2.46484V9.86811H4.92681V7.39941Z"></path>
+                                    <path d="M2.46197 9.86133H0V12.33H2.46197V9.86133Z"></path>
+                                </svg>
+                            </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-decoration-none text-dark small" href="/contact">Contact</a>
+                        <li class="nav-item d-flex">
+                            <a class="text-decoration-none fw-light btn rounded-0 css-btn-outline-secondary w-100"
+                                href="/contact">
+                                Contact
+                                <svg fill="var(--bs-secondary)" xmlns="http://www.w3.org/2000/svg" width="1rem"
+                                    height="1rem" viewBox="0 0 8 13" class="align-text-center ms-2">
+                                    <path d="M7.39166 4.93066H4.92969V7.39936H7.39166V4.93066Z"></path>
+                                    <path d="M4.92681 2.46875H2.46484V4.93744H4.92681V2.46875Z"></path>
+                                    <path d="M2.46197 0H0V2.46869H2.46197V0Z"></path>
+                                    <path d="M4.92681 7.39941H2.46484V9.86811H4.92681V7.39941Z"></path>
+                                    <path d="M2.46197 9.86133H0V12.33H2.46197V9.86133Z"></path>
+                                </svg>
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -52,12 +75,12 @@
             <div class="row">
                 <aside class="col-lg-3 mb-4">
                     <div class="text-center mb-4">
-                        <img fetchpriority="high" src="/img/pictures/profile.jpg" alt="Ask Selmer" width="120" height="120"
-                            class="mb-3 rounded-circle img-fluid object-fit-cover">
+                        <img fetchpriority="high" src="/img/pictures/profile.jpg" alt="Ask Selmer" width="120"
+                            height="120" class="mb-3 rounded-circle img-fluid object-fit-cover">
                         <h1 class="h4 mb-2">Ask Selmer</h1>
                         <p class="text-body-secondary small mb-1">Systems Administration • Network Engineering • DevOps
                         </p>
-                        <a href="mailto:contact@as8.net" class="btn btn-primary w-100 py-2 fw-semibold shadow-sm mt-3"
+                        <a href="mailto:contact@as8.net" class="btn btn-primary w-100 py-2 mt-3 fw-semibold"
                             aria-label="Send an email">
                             ✉️ Send me an email
                         </a>
@@ -89,8 +112,8 @@
                                 <picture>
                                     <source srcset="/img/logos/employment/parknet-light.svg"
                                         media="(prefers-color-scheme: dark)">
-                                    <img fetchpriority="high" src="/img/logos/employment/parknet-dark.svg" alt="Parknet F.M.B.A." height="32"
-                                        class="mw-100">
+                                    <img fetchpriority="high" src="/img/logos/employment/parknet-dark.svg"
+                                        alt="Parknet F.M.B.A." height="32" class="mw-100">
                                 </picture>
                             </a>
                             <h3 class="h6 mb-0">Senior Systems Administrator</h3>
@@ -114,8 +137,8 @@
                                 <picture>
                                     <source srcset="/img/logos/consulting/cbs-light.svg"
                                         media="(prefers-color-scheme: dark)">
-                                    <img fetchpriority="high" src="/img/logos/consulting/cbs-dark.svg" alt="Copenhagen Business School"
-                                        height="32" class="mw-100">
+                                    <img fetchpriority="high" src="/img/logos/consulting/cbs-dark.svg"
+                                        alt="Copenhagen Business School" height="32" class="mw-100">
                                 </picture>
                             </a>
                             <h3 class="h6 mb-0">Data Manager</h3>
@@ -136,8 +159,8 @@
                                 <picture>
                                     <source srcset="/img/logos/consulting/formulaautomobile-light.svg"
                                         media="(prefers-color-scheme: dark)">
-                                    <img fetchpriority="high" src="/img/logos/consulting/formulaautomobile-dark.svg" alt="Formula Automobile"
-                                        height="32" class="mw-100">
+                                    <img fetchpriority="high" src="/img/logos/consulting/formulaautomobile-dark.svg"
+                                        alt="Formula Automobile" height="32" class="mw-100">
                                 </picture>
                             </a>
                             <h3 class="h6 mb-0">Data Integration (project)</h3>
@@ -157,8 +180,8 @@
                                 <picture>
                                     <source srcset="/img/logos/consulting/dofkbh-light.svg"
                                         media="(prefers-color-scheme: dark)">
-                                    <img fetchpriority="high" src="/img/logos/consulting/dofkbh-dark.svg" alt="BirdLife Denmark - Copenhagen"
-                                        height="32" class="mw-100">
+                                    <img fetchpriority="high" src="/img/logos/consulting/dofkbh-dark.svg"
+                                        alt="BirdLife Denmark - Copenhagen" height="32" class="mw-100">
                                 </picture>
                             </a>
                             <h3 class="h6 mb-0">Webmaster</h3>
@@ -174,8 +197,8 @@
                                 <picture>
                                     <source srcset="/img/logos/volunteering/roskildefestival-light.svg"
                                         media="(prefers-color-scheme: dark)">
-                                    <img fetchpriority="high" src="/img/logos/volunteering/roskildefestival-dark.svg" alt="Roskilde Festival"
-                                        height="32" class="mw-100">
+                                    <img fetchpriority="high" src="/img/logos/volunteering/roskildefestival-dark.svg"
+                                        alt="Roskilde Festival" height="32" class="mw-100">
                                 </picture>
                             </a>
                             <h3 class="h6 mb-0">Core Configuration</h3>
