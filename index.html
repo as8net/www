@@ -2,70 +2,171 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="AS8 offers expert systems administration, network engineering, and DevOps consulting by Ask Selmer, plus RIPE NCC LIR services including PI space sponsorship, ASN sponsorship, and RIPE database management through AS202361.">
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" href="/img/favicon/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/img/favicon/apple-touch-icon.png">
     <link rel="manifest" href="/manifest.webmanifest">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css" type="text/css" />
-    <title>AS8 - Ask Selmer</title>
-    <meta name="description" content="Systems administrator and owner-operator of AS202361" />
+    <title>AS8 - Consulting and LIR Services</title>
 </head>
 
 <body>
-    <a href="#main" class="skip-link">Skip to content</a>
-    <header>
-        <a class="brand" href="/">
-            <img src="/img/favicon/icon.svg" width="64" height="64" alt="AS8 Logo" />
-            <div class="fqdn">
-                <p class="name">Ask Selmer</p>
+    <header class="sticky-top css-bg-glass">
+        <nav class="navbar">
+            <div class="container d-flex align-items-center">
+                <a class="navbar-brand d-flex align-items-center py-0" href="/">
+                    <img src="/img/favicon/icon.svg" width="64" height="64" alt="AS8 Logo">
+                    <p class="mb-0 ms-2 fs-3 fw-semibold">AS8</p>
+                </a>
+
+                <input class="visually-hidden" id="css-nav-toggle" type="checkbox" />
+                <label
+                    class="css-navbar-toggler ms-auto d-lg-none d-inline-flex align-items-center justify-content-center"
+                    for="css-nav-toggle" aria-label="Toggle navigation">
+                    <span class="css-navbar-toggler-icon" aria-hidden="true"></span>
+                </label>
+
+                <div class="css-navbar-collapse d-lg-flex ms-lg-auto align-items-center">
+                    <ul class="navbar-nav d-flex flex-column flex-lg-row align-items-center gap-3 mb-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-decoration-none text-dark small" href="/about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-decoration-none text-dark small" href="/contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </a>
-        <input type="checkbox" id="menu-toggle" role="button" aria-label="Menu button" />
-        <label for="menu-toggle" class="menu-button">
-            <span class="menu-button-line"></span>
-        </label>
-        <nav class="menu">
-            <ul class="links">
-                <!-- Menu items can be added here -->
-            </ul>
         </nav>
     </header>
 
-    <main id="main">
-        <div class="hero">
-            <h1>Ask Selmer</h1>
-            <p>Systems administrator and owner-operator of AS202361</p>
-            <a href="mailto:contact@as8.net" class="button">Send an email</a>
-        </div>
-        <div class="card-container">
-            <a href="/about" class="card-wrapper" aria-label="About me">
-                <div class="card">
-                    <img src="/img/icon/web-server-login.svg" width="80" height="80" alt="Computer" />
-                    <h2>Ask Selmer</h2>
-                    <p>Systems administration, development and infrastructure management through automation.</p>
+    <main>
+        <div class="row g-0 css-min-vh-50">
+            <a href="/about"
+                class="col-md-6 d-flex align-items-center justify-content-end p-5 text-decoration-none text-white text-end css-bg-gradient-primary">
+                <div>
+                    <h1 class="display-4">AS202361</h1>
+                    <p class="lead">LIR Services</p>
+                    <span aria-hidden="true" class="fs-3">&larr;</span>
                 </div>
             </a>
-            <a href="/asn" class="card-wrapper" aria-label="Autonomous System">
-                <div class="card">
-                    <img src="/img/icon/network-peering.svg" width="80" height="80" alt="Network" />
-                    <h2>AS202361</h2>
-                    <p>Operating a modern IPv4+IPv6 Autonomous System and KVM-based hosting platform.</p>
+            <a href="/contact"
+                class="col-md-6 d-flex align-items-center justify-content-start p-5 text-decoration-none text-white text-start css-bg-gradient-secondary">
+                <div>
+                    <h1 class="display-4">Ask Selmer</h1>
+                    <p class="lead">Consulting</p>
+                    <span aria-hidden="true" class="fs-3">&rarr;</span>
                 </div>
             </a>
         </div>
+
+        <section class="overflow-hidden py-5 w-90 mx-auto position-relative css-overflow-hidden">
+            <div class="d-flex css-animate-marquee">
+                <div class="px-4">
+                    <a href="https://dofkbh.dk">
+                        <picture>
+                            <source srcset="/img/logos/consulting/dofkbh-light.svg"
+                                media="(prefers-color-scheme: dark)">
+                            <img src="/img/logos/consulting/dofkbh-dark.svg" alt="BirdLife Denmark - Copenhagen"
+                                height="48" loading="lazy">
+                        </picture>
+                    </a>
+                </div>
+                <div class="px-4">
+                    <a href="https://www.cbs.dk">
+                        <picture>
+                            <source srcset="/img/logos/consulting/cbs-light.svg" media="(prefers-color-scheme: dark)">
+                            <img src="/img/logos/consulting/cbs-dark.svg" alt="Copenhagen Business School" height="48"
+                                loading="lazy">
+                        </picture>
+                    </a>
+                </div>
+                <div class="px-4">
+                    <a href="https://formulaauto.dk/">
+                        <picture>
+                            <source srcset="/img/logos/consulting/formulaautomobile-light.svg"
+                                media="(prefers-color-scheme: dark)">
+                            <img src="/img/logos/consulting/formulaautomobile-dark.svg" alt="Formula Automobile"
+                                height="48" loading="lazy">
+                        </picture>
+                    </a>
+                </div>
+                <!-- Duplicate items for seamless loop -->
+                <div class="px-4">
+                    <a href="https://dofkbh.dk">
+                        <picture>
+                            <source srcset="/img/logos/consulting/dofkbh-light.svg"
+                                media="(prefers-color-scheme: dark)">
+                            <img src="/img/logos/consulting/dofkbh-dark.svg" alt="BirdLife Denmark - Copenhagen"
+                                height="48" loading="lazy">
+                        </picture>
+                    </a>
+                </div>
+                <div class="px-4">
+                    <a href="https://www.cbs.dk">
+                        <picture>
+                            <source srcset="/img/logos/consulting/cbs-light.svg" media="(prefers-color-scheme: dark)">
+                            <img src="/img/logos/consulting/cbs-dark.svg" alt="Copenhagen Business School" height="48"
+                                loading="lazy">
+                        </picture>
+                    </a>
+                </div>
+                <div class="px-4">
+                    <a href="https://formulaauto.dk/">
+                        <picture>
+                            <source srcset="/img/logos/consulting/formulaautomobile-light.svg"
+                                media="(prefers-color-scheme: dark)">
+                            <img src="/img/logos/consulting/formulaautomobile-dark.svg" alt="Formula Automobile"
+                                height="48" loading="lazy">
+                        </picture>
+                    </a>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer>
-        <div class="column">
-            <a href="https://www.peeringdb.com/asn/202361" aria-label="AS202361 Peering DB" rel="noopener">AS202361</a>
-            <p>CVR: 43541641</p>
-        </div>
-        <div class="column">
-            <a href="https://stat.ripe.net/AS202361" aria-label="RIPE NCC" rel="noopener">
-                <img src="/img/icon/ripe-ncc-member-logo-white.svg" width="200" height="141" alt="RIPE NCC" />
-            </a>
+    <footer class="py-4">
+        <div class="container">
+            <div class="d-flex flex-wrap justify-content-center justify-content-lg-between align-items-end gap-4">
+                <div class="d-flex align-items-center gap-3">
+                    <img src="/img/favicon/icon.svg" width="48" height="48" alt="AS8 Logo">
+                    <div>
+                        <p class="mb-0 fw-semibold">AS8</p>
+                        <p class="mb-0 fw-light small">CVR-nr. 43541641 • Nattergalevej 58, 2400 Copenhagen,
+                            Denmark</p>
+                    </div>
+                </div>
+                <nav class="d-flex flex-wrap justify-content-center align-items-center gap-4">
+                    <a href="https://bgp.tools/as/202361" class="text-decoration-none text-dark small">BGP.tools</a>
+                    <a href="https://www.peeringdb.com/asn/202361"
+                        class="text-decoration-none text-dark small">PeeringDB</a>
+                    <a href="https://stat.ripe.net/resource/AS202361"
+                        class="text-decoration-none text-dark small">RIPEstat</a>
+                    <a href="https://datacvr.virk.dk/enhed/virksomhed/43541641"
+                        class="text-decoration-none text-dark small">CVR</a>
+                    <span class="text-dark">•</span>
+                    <a href="/about" class="text-decoration-none text-dark small">About</a>
+                    <a href="/contact" class="text-decoration-none text-dark small">Contact me</a>
+                </nav>
+            </div>
+            <div class="d-flex justify-content-center mt-3">
+                <div class="d-flex align-items-center gap-3">
+                    <!-- <picture>
+                        <source srcset="/img/logos/member/manrs-light.svg" media="(prefers-color-scheme: dark)">
+                        <img src="/img/logos/member/manrs-dark.svg" width="96" alt="MANRS">
+                    </picture> -->
+                    <picture>
+                        <source srcset="/img/logos/member/ripe-ncc-member-light.svg"
+                            media="(prefers-color-scheme: dark)">
+                        <img src="/img/logos/member/ripe-ncc-member-dark.svg" width="96" alt="RIPE NCC">
+                    </picture>
+                </div>
+            </div>
         </div>
     </footer>
 </body>
